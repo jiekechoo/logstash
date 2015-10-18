@@ -10,7 +10,7 @@ RUN echo "Asia/Shanghai" > /etc/timezone && dpkg-reconfigure -f noninteractive t
 
 # Logstash
 RUN \
-    curl -s http://192.168.1.10/downloads/logstash-1.5.4.tar.gz | tar -C /opt -zxv && \
+    curl -s http://sectong.com/downloads/logstash-1.5.4.tar.gz | tar -C /opt -zxv && \
     ln -s /opt/logstash-1.5.4 /opt/logstash && \
     mkdir /var/log/logstash
 
